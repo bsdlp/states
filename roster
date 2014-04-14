@@ -1,0 +1,7 @@
+control:
+    host: control.nerdrage.biz
+    user: root
+
+core0:
+    host: core0.serv.pw
+    user: root
