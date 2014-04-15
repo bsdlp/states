@@ -8,7 +8,7 @@
 
 # Set the location of the salt master server, if the master server cannot be
 # resolved, then the minion will fail to start.
-#master: salt
+master: master.salt.serv.pw
 
 # If multiple masters are specified in the 'master' setting, the default behavior
 # is to always try to connect to them in the order they are listed. If random_master is
@@ -19,6 +19,7 @@
 
 # Set whether the minion should connect to the master via IPv6
 #ipv6: False
+ipv6: True
 
 # Set the number of seconds to wait before attempting to resolve
 # the master hostname if name resolution fails. Defaults to 30 seconds.
