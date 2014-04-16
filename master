@@ -15,10 +15,10 @@ interface: '::'
 
 # Whether the master should listen for IPv6 connections. If this is set to True,
 # the interface option must be adjusted too (for example: "interface: '::'")
-ipv6: true
+ipv6: True
 
 # The tcp port used by the publisher
-#publish_port: 4505
+publish_port: 4505
 
 # The user under which the salt master will run. Salt will update all
 # permissions to allow the specified user to run the master. The exception is
@@ -47,7 +47,7 @@ user: root
 # The number of worker threads to start, these threads are used to manage
 # return calls made from minions to the master, if the master seems to be
 # running slowly, increase the number of threads
-#worker_threads: 5
+worker_threads: 5
 
 # The port used by the communication interface. The ret (return) port is the
 # interface used for the file server, authentication, job returnes, etc.
