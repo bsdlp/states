@@ -24,8 +24,7 @@ ipv6: true
 # permissions to allow the specified user to run the master. The exception is
 # the job cache, which must be deleted if this user is changed.  If the
 # modified files cause conflicts set verify_env to False.
-#user: root
-user: jchen
+user: root
 
 # Max open files
 # Each minion connecting to the master uses AT LEAST one file descriptor, the
