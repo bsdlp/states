@@ -2,16 +2,16 @@ control:
     host: control.nerdrage.biz
     user: root
 
-core0:
-    host: core0.serv.pw
+ewr0:
+    host: ewr0.lin.serv.pw
     user: root
 
-core1:
-    host: core1.serv.pw
+ewr1:
+    host: ewr1.lin.serv.pw
     user: root
 
-core2:
-    host: core2.serv.pw
+ewr2:
+    host: ewr2.lin.serv.pw
     user: root
 
 bhs0:
