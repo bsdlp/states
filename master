@@ -54,7 +54,7 @@ worker_threads: 5
 #ret_port: 4506
 
 # Specify the location of the daemon process ID file
-#pidfile: /var/run/salt-master.pid
+pidfile: /usr/local/var/run/salt-master.pid
 
 # The root directory prepended to these options: pki_dir, cachedir,
 # sock_dir, log_file, autosign_file, autoreject_file, extension_modules,
@@ -65,7 +65,7 @@ worker_threads: 5
 #pki_dir: /etc/salt/pki/master
 
 # Directory to store job and cache data
-#cachedir: /var/cache/salt/master
+cachedir: /usr/local/var/cache/salt/master
 
 # Directory for custom modules. This directory can contain subdirectories for
 # each of Salt's module types such as "runners", "output", "wheel", "modules",
@@ -95,7 +95,7 @@ worker_threads: 5
 #color: True
 
 # Set the directory used to hold unix sockets
-#sock_dir: /var/run/salt/master
+sock_dir: /usr/local/var/run/salt/master
 
 # The master can take a while to start up when lspci and/or dmidecode is used
 # to populate the grains for the master. Enable if you want to see GPU hardware
@@ -410,7 +410,7 @@ minion_data_cache: True
 #
 #gitfs_remotes:
 #  - git://github.com/saltstack/salt-states.git
-#  - file:///var/git/saltmaster
+#  - file:///usr/local/var/git/saltmaster
 #
 # The gitfs_ssl_verify option specifies whether to ignore ssl certificate
 # errors when contacting the gitfs backend. You might want to set this to
@@ -476,7 +476,7 @@ minion_data_cache: True
 #syndic_master_port: 4506
 
 # PID file of the syndic daemon
-#syndic_pidfile: /var/run/salt-syndic.pid
+syndic_pidfile: /usr/local/var/run/salt-syndic.pid
 
 # LOG file of the syndic daemon
 #syndic_log_file: syndic.log
@@ -553,12 +553,12 @@ minion_data_cache: True
 # location. Remote logging works best when configured to use rsyslogd(8) (e.g.:
 # ``file:///dev/log``), with rsyslogd(8) configured for network logging. The URI
 # format is: <file|udp|tcp>://<host|socketpath>:<port-if-required>/<log-facility>
-#log_file: /var/log/salt/master
+#log_file: /usr/local/var/log/salt/master
 #log_file: file:///dev/log
 #log_file: udp://loghost:10514
 
-#log_file: /var/log/salt/master
-#key_logfile: /var/log/salt/key
+log_file: /usr/local/var/log/salt/master
+key_logfile: /usr/local/var/log/salt/key
 
 # The level of messages to send to the console.
 # One of 'garbage', 'trace', 'debug', info', 'warning', 'error', 'critical'.

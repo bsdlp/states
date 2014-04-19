@@ -32,7 +32,7 @@ ipv6: True
 #user: root
 
 # Specify the location of the daemon process ID file
-#pidfile: /var/run/salt-minion.pid
+pidfile: /usr/local/var/run/salt-minion.pid
 
 # The root directory prepended to these options: pki_dir, cachedir, log_file,
 # sock_dir, pidfile.
@@ -65,7 +65,7 @@ ipv6: True
 #  cab_u: 14-15
 
 # Where cache data goes
-#cachedir: /var/cache/salt/minion
+cachedir: /usr/local/var/cache/salt/minion
 
 # Verify and set permissions on configuration directories at startup
 #verify_env: True
@@ -77,7 +77,7 @@ ipv6: True
 #cache_jobs: False
 
 # set the directory used to hold unix sockets
-#sock_dir: /var/run/salt/minion
+sock_dir: /usr/local/var/run/salt/minion
 
 # Set the default outputter used by the salt-call command. The default is
 # "nested"
@@ -441,12 +441,12 @@ ipv6: True
 # location. Remote logging works best when configured to use rsyslogd(8) (e.g.:
 # ``file:///dev/log``), with rsyslogd(8) configured for network logging. The URI
 # format is: <file|udp|tcp>://<host|socketpath>:<port-if-required>/<log-facility>
-#log_file: /var/log/salt/minion
+#log_file: /usr/local/var/log/salt/minion
 #log_file: file:///dev/log
 #log_file: udp://loghost:10514
 #
-#log_file: /var/log/salt/minion
-#key_logfile: /var/log/salt/key
+log_file: /usr/local/var/log/salt/minion
+key_logfile: /usr/local/var/log/salt/key
 #
 # The level of messages to send to the console.
 # One of 'garbage', 'trace', 'debug', info', 'warning', 'error', 'critical'.
