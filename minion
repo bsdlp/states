@@ -112,7 +112,7 @@ sock_dir: /usr/local/var/run/salt/minion
 
 # If the master rejects the minion's public key, retry instead exiting. Rejected keys
 # # will be handled the same as waiting on acceptance.
-#rejected_retry: False
+rejected_retry: True
 
 # When the master key changes, the minion will try to re-auth itself to receive
 # the new master key. In larger environments this can cause a SYN flood on the
