@@ -14,6 +14,10 @@ ewr2:
     host: ewr2.lin.serv.pw
     user: root
 
+ewr3:
+    host: ewr3.lin.serv.pw
+    user: root
+
 bhs0:
     host: bhs0.serv.pw
     user: root
