@@ -408,8 +408,8 @@ fileserver_backend:
 # Note:  file:// repos will be treated as a remote, so refs you want used must
 # exist in that repo as *local* refs.
 #
-gitfs_remotes:
-  - https://github.com/saltstack-formulas/salt-formula.git
+#gitfs_remotes:
+#  - https://github.com/saltstack-formulas/salt-formula.git
 #  - file:///usr/local/var/git/saltmaster
 #
 # The gitfs_ssl_verify option specifies whether to ignore ssl certificate
