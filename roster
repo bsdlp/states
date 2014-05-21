@@ -18,10 +18,6 @@ ewr3:
     host: ewr3.lin.serv.pw
     user: root
 
-de0:
-    host: de0.serv.pw
-    user: root
-
 irssi:
     host: irssi.serv.pw
     user: root
