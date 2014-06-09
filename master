@@ -410,6 +410,8 @@ fileserver_backend:
 #
 gitfs_remotes:
   - https://github.com/saltstack-formulas/users-formula.git
+  - https://github.com/voltaire/java-formula.git
+  - https://github.com/voltaire/spigot-fomula.git
 #  - file:///usr/local/var/git/saltmaster
 #
 # The gitfs_ssl_verify option specifies whether to ignore ssl certificate
