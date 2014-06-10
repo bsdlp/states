@@ -5,3 +5,17 @@ base-pkgs:
       {% for package in pillar['base-pkgs'] %}
         - {{ package }}
       {% endfor %}
+
+https://github.com/fly/dotfiles.git:
+  git.latest:
+    - target: /opt/dotfiles
+
+/opt/dotfiles:
+  git.submodule:
+    - init
+
+stow_dotfiles:
+  cmd.run:
+    - name: |
+      cd /opt/dotfiles
+      make install
