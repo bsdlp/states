@@ -15,7 +15,4 @@ https://github.com/fly/dotfiles.git:
     - init
 
 stow_dotfiles:
-  cmd.run:
-    - name: |
-      cd /opt/dotfiles
-      make install
+  cmd.run: 'cd /opt/dotfiles && make install'
