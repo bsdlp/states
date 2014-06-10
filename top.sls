@@ -5,6 +5,8 @@ base:
   'os_family:Arch':
     - match: grain
     - base
+  'roles:master':
+    - salt.master
   'roles:spigot':
     - java
     - spigot
