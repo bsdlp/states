@@ -5,8 +5,8 @@ base:
   'os_family:Arch':
     - match: grain
     - base
-  'minecraft':
+  'spigot*':
     - java
     - spigot
-  'docker':
+  'docker*':
     - docker
