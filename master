@@ -409,9 +409,9 @@ fileserver_backend:
 # exist in that repo as *local* refs.
 #
 gitfs_remotes:
-  - git@github.com:mutagendev/users-formula.git
-  - git@github.com:voltaire/java-formula.git
-  - git@github.com:voltaire/spigot-fomula.git
+  - git+ssh://git@github.com:mutagendev/users-formula.git
+  - git+ssh://git@github.com:voltaire/java-formula.git
+  - git+ssh://git@github.com:voltaire/spigot-fomula.git
 #  - file:///usr/local/var/git/saltmaster
 #
 # The gitfs_ssl_verify option specifies whether to ignore ssl certificate
