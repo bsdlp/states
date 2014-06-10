@@ -7,12 +7,16 @@ base:
     - match: grain
     - base
     - users
-  'roles:docker':
+  'G@role:docker':
+    - match: compound
     - docker
-  'roles:irssi':
+  'G@role:irssi':
+    - match: compound
     - irssi
-  'roles:master':
+  'G@role:master':
+    - match: compound
     - salt.master
-  'roles:spigot':
+  'G@role:spigot':
+    - match: compound
     - java
     - spigot
