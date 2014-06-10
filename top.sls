@@ -2,9 +2,11 @@ base:
   'os_family:Arch':
     - match: grain
     - base
+    - users
   'os_family:Debian':
     - match: grain
     - base
+    - users
   'G@role:docker':
     - match: compound
     - docker
