@@ -9,6 +9,8 @@ base:
     - users
   'roles:docker':
     - docker
+  'roles:irssi':
+    - irssi
   'roles:master':
     - salt.master
   'roles:spigot':
