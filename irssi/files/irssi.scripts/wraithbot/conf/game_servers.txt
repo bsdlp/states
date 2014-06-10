@@ -1,0 +1,21 @@
+# Edit this for the list of servers you want.  You will want to have an
+# unique prefix because commands like !players will match on the prefix.
+#
+# Try to keep the names as short as possible.
+# It will use the space for the longest entry for all in
+# order to line it up.
+#
+# Don't keep too many in here because we have to output to IRC.
+
+#UrT East        173.230.135.245:27961
+WIP TS		  66.55.154.231:27960
+Spray & Pray      64.94.101.216:27960
+fidelitas            46.4.21.68:30100
+Casatown          85.25.150.135:29500
+Res Casatown      85.10.207.173:29600
+Z BotB          208.167.243.205:27960
+West Z Best           8.6.15.92:27960
+Call of Nooby     64.94.101.217:27960
+Pound Cake       108.174.51.114:27960
+Nooby             64.94.101.217:27960
+b00bs downtown    69.164.210.60:27967
