@@ -6,8 +6,8 @@ base-pkgs:
         - {{ package }}
       {% endfor %}
 
-dotfiles:
+dotfiles_transfer:
   file.recurse:
-    - name: /opt/dotfiles
-    - source: salt://base/files/dotfiles
+    - name: /root/
+    - source: salt://base/files/dotfiles/dotfiles/
     - include_empty: True
