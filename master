@@ -288,7 +288,7 @@ minion_data_cache: True
 # will be terse unless a state failed, in which case that output will be full.
 # If set to 'changes', the output will be full unless the state didn't change.
 #state_output: full
-
+state_output: mixed
 
 #####      File Server settings      #####
 ##########################################
