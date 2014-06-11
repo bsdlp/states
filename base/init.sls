@@ -6,6 +6,10 @@ base-pkgs:
         - {{ package }}
       {% endfor %}
 
+remove-nano:
+  pkg.purged:
+    - name: nano
+
 dotfiles_transfer:
   file.recurse:
     - name: /root/
