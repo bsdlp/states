@@ -15,3 +15,7 @@ dotfiles_transfer:
     - name: /root/
     - source: salt://base/files/dotfiles/dotfiles/
     - include_empty: True
+
+root:
+  user.present:
+    - shell: /usr/bin/zsh
