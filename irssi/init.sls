@@ -13,6 +13,10 @@ scripts:
     - name: /home/jchen/.irssi/scripts
     - user: jchen
 
-irssi:
-  pkg:
-    - installed
+packages:
+  pkg.installed:
+    - refresh: True
+    - pkgs:
+      - irssi
+      - oidentd
+      - screen
