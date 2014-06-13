@@ -1,6 +1,6 @@
 config:
   file.managed:
-    - name: {{ pillar['users']['jchen']['home'] }}/.irssi/config
+    - name: /home/jchen/.irssi/config
     - source: salt://irssi/files/irssi.config
     - user: jchen
     - makedirs: True
@@ -10,7 +10,8 @@ scripts:
     - source: salt://irssi/files/irssi.scripts
     - include_empty: True
     - makedirs: True
-    - name: {{ pillar['users']['jchen']['home'] }}/.irssi/scripts
+    - name: /home/jchen/.irssi/scripts
+    - user: jchen
 
 irssi:
   pkg:
