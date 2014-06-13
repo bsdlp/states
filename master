@@ -419,7 +419,7 @@ gitfs_remotes:
 # false if you're using a git backend that uses a self-signed certificate but
 # keep in mind that setting this flag to anything other than the default of True
 # is a security concern, you may want to try using the ssh transport.
-#gitfs_ssl_verify: True
+gitfs_ssl_verify: True
 #
 #
 # The gitfs_root option gives the ability to serve files from a subdirectory
