@@ -20,3 +20,6 @@ base:
     - match: compound
     - java
     - spigot
+  'G@role:aur_repo':
+    - match: compound
+    - aur_repo
