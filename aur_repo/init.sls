@@ -30,6 +30,10 @@ abs_pkgs:
       - util-linux
       - which
 
+/etc/makepkg.conf:
+  file.managed:
+    - source: salt://aur_repo/files/makepkg.conf
+
 /etc/abs.conf:
   file.managed:
     - source: salt://aur_repo/files/abs.conf
