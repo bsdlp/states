@@ -29,3 +29,13 @@ abs_pkgs:
       - texinfo
       - util-linux
       - which
+
+abs:
+  cmd:
+    - run
+    - require: abs_pkgs
+
+abs2:
+  cmd.run:
+    - name: abs
+    - require: abs
