@@ -30,6 +30,12 @@ abs_pkgs:
       - util-linux
       - which
 
+{% for build_dir in pillar['aur_repo']['build_dirs'] %}
+{{ build_dir }}:
+  file.directory:
+    - makedirs: True
+{% endfor %}
+
 /etc/makepkg.conf:
   file.managed:
     - source: salt://aur_repo/files/makepkg.conf
