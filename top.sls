@@ -7,6 +7,9 @@ base:
     - match: grain
     - base
     - users
+  'G@role:aur_repo':
+    - match: compound
+    - aur_repo
   'G@role:docker':
     - match: compound
     - docker
@@ -23,6 +26,3 @@ base:
     - match: compound
     - java
     - spigot
-  'G@role:aur_repo':
-    - match: compound
-    - aur_repo
