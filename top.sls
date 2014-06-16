@@ -16,6 +16,9 @@ base:
   'G@role:master':
     - match: compound
     - salt.master
+  'G@role:mesos':
+    - match: compound
+    - mesos
   'G@role:spigot':
     - match: compound
     - java
