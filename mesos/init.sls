@@ -6,7 +6,8 @@ mesos_tarball:
 
 required_packages:
   pkg.installed:
-    pkgs:
+    - refresh: True
+    - pkgs:
       {% for pkg in pillar['mesos']['required_pkgs'] %}
       - {{ pkg }}
       {% endfor %}
