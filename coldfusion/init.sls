@@ -9,3 +9,8 @@ cfinstall:
     - creates: /opt/coldfusion11/
     - require:
       - file: cfinstallfile
+
+apache2:
+  service:
+    - running
+    - enabled: True
