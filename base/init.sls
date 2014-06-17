@@ -16,6 +16,13 @@ dotfiles_transfer:
     - source: salt://base/files/dotfiles/dotfiles/
     - include_empty: True
 
+{% if grains['os_family'] == 'Debian' %}
+  {% set shell = '/bin/zsh' %}
+{% elif grains['os_family'] == 'Arch' %}
+  {% set shell = '/usr/bin/zsh' %}
+{% else %}
+  {% set shell = '/usr/local/bin/zsh' %}
+{% endif %}
 root:
   user.present:
-    - shell: /usr/bin/zsh
+    - shell: {{ shell }}
