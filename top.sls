@@ -10,6 +10,10 @@ base:
   'G@role:aur_repo':
     - match: compound
     - aur_repo
+  'G@role:coldfusion':
+    - match: compound
+    - base
+    - coldfusion
   'G@role:docker':
     - match: compound
     - docker
