@@ -2,33 +2,9 @@ abs_pkgs:
   pkg.installed:
     - refresh: True
     - pkgs:
-      - abs
-      - autoconf
-      - automake
-      - binutils
-      - bison
-      - fakeroot
-      - file
-      - findutils
-      - flex
-      - gawk
-      - gcc
-      - gettext
-      - grep
-      - groff
-      - gzip
-      - libtool
-      - libutil-linux
-      - m4
-      - make
-      - pacman
-      - patch
-      - pkg-config
-      - sed
-      - sudo
-      - texinfo
-      - util-linux
-      - which
+      {% for pkg in pillar['aur_repo']['abs_pkgs'] %}
+      - {{ pkg }}
+      {% endfor %}
 
 {% for build_dir in pillar['aur_repo']['build_dirs'] %}
 {{ build_dir }}:
