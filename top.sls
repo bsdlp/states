@@ -8,18 +8,18 @@ base:
     - base
     - users
   'G@role:docker':
-    - match: compound
+    - match: grain
     - docker
   'G@role:irssi':
-    - match: compound
+    - match: grain
     - irssi
   'G@role:master':
-    - match: compound
+    - match: grain
     - salt.master
   'G@role:spigot':
-    - match: compound
+    - match: grain
     - java
     - spigot
   'G@role:aur_repo':
-    - match: compound
+    - match: grain
     - aur_repo
