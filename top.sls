@@ -1,11 +1,5 @@
 base:
-  'os_family:Arch':
-    - match: grain
-    - base
-    - ssh
-    - users
-  'os_family:Debian':
-    - match: grain
+  '*':
     - base
     - ssh
     - users
