@@ -4,25 +4,25 @@ base:
     - ssh
     - users
   'G@role:aur_repo':
-    - match: grain
+    - match: compound
     - aur_repo
   'G@role:coldfusion':
-    - match: grain
+    - match: compound
     - base
     - coldfusion
   'G@role:docker':
-    - match: grain
+    - match: compound
     - docker
   'G@role:irssi':
-    - match: grain
+    - match: compound
     - irssi
   'G@role:master':
-    - match: grain
+    - match: compound
     - salt.master
   'G@role:mesos':
-    - match: grain
+    - match: compound
     - mesos
   'G@role:spigot':
-    - match: grain
+    - match: compound
     - java
     - spigot
