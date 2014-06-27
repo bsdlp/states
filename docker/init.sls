@@ -6,3 +6,8 @@ docker:
     - name: {{ pillar['services']['docker'] }}
     - enable: True
     - running
+
+/etc/systemd/system/docker.service:
+  file.managed:
+    - source: salt://docker/files/docker.service
+    - makedirs: True
