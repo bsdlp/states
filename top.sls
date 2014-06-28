@@ -6,6 +6,9 @@ base:
   'G@role:aur_repo':
     - match: compound
     - aur_repo
+  'G@role:buildbox':
+    - match: compound
+    - docker
   'G@role:coldfusion':
     - match: compound
     - base
