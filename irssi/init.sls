@@ -1,8 +1,8 @@
 config:
   file.managed:
-    - name: /home/jchen/.irssi/config
+    - name: /home/irssi/.irssi/config
     - source: salt://irssi/files/irssi.config
-    - user: jchen
+    - user: irssi
     - makedirs: True
 
 scripts:
@@ -10,8 +10,8 @@ scripts:
     - source: salt://irssi/files/irssi.scripts
     - include_empty: True
     - makedirs: True
-    - name: /home/jchen/.irssi/scripts
-    - user: jchen
+    - name: /home/irssi/.irssi/scripts
+    - user: irssi
 
 packages:
   pkg.installed:
