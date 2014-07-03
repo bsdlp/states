@@ -11,8 +11,10 @@ base:
     - docker
   'G@role:coldfusion':
     - match: compound
-    - base
     - coldfusion
+  'G@role:csgo':
+    - match: compound
+    - csgo
   'G@role:docker':
     - match: compound
     - docker
