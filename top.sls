@@ -27,6 +27,9 @@ base:
   'G@role:mesos':
     - match: compound
     - mesos
+  'G@role:scala':
+    - match: compound
+    - scala
   'G@role:spigot':
     - match: compound
     - java
