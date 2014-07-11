@@ -1,2 +1,3 @@
 scala:
-  pkg.installed
+  pkg.installed:
+    - refresh: True

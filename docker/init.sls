@@ -2,6 +2,7 @@ docker:
   pkg:
     - installed
     - name: {{ pillar['pkgs']['docker'] }}
+    - refresh: True
   service:
     - name: {{ pillar['services']['docker'] }}
     - enable: True

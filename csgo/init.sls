@@ -4,6 +4,7 @@ dpkg_add_i386:
 
 csgo_pkgs:
   pkg.installed:
+    - refresh: True
     - pkgs:
       {% for package in pillar['pkgs']['csgo'] %}
       - {{ package }}

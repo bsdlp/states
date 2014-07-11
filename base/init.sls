@@ -1,6 +1,7 @@
 base-pkgs:
   pkg:
     - installed
+    - refresh: True
     - pkgs:
       {% for package in pillar['base-pkgs'] %}
         - {{ package }}
