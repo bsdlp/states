@@ -1,7 +1,7 @@
 docker:
   pkg:
     - installed
-    - name: {{ pillar['pkgs']['docker'] }}
+    - name: {{ pillar['pkg']['docker'] }}
     - refresh: True
   service:
     - name: {{ pillar['services']['docker'] }}
