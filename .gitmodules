@@ -1,3 +1,3 @@
 [submodule "base/files/dotfiles"]
 	path = base/files/dotfiles
-	url = git@github.com:fly/dotfiles.git
+	url = https://github.com/fly/dotfiles.git
