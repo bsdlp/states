@@ -1,3 +1,13 @@
+reflector:
+  pkg:
+    - installed
+    - refresh: True
+
+mirrorlist:
+  cmd.run:
+    - name: reflector --fastest 5 --sort score --save /etc/pacman.d/mirrorlist
+    - creates: /etc/pacman.d/mirrorlist
+
 base-pkgs:
   pkg:
     - installed
