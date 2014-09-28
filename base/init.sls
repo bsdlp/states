@@ -1,3 +1,7 @@
+haveged:
+  service:
+    - running
+
 reflector:
   pkg:
     - installed
