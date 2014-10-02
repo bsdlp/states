@@ -1,8 +1,3 @@
-steam:
-  user.present:
-    - shell: /bin/bash
-    - home: /srv/steam
-
 steamcmd:
   archive:
     - extracted

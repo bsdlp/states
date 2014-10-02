@@ -21,6 +21,9 @@ base:
   'G@role:irssi':
     - match: compound
     - irssi
+  'G@role:killingfloor':
+    - match: compound
+    - steam
   'G@role:master':
     - match: compound
     - salt.master
