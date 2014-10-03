@@ -12,3 +12,10 @@ install steamcmd:
     - env:
       - STEAMEXE: 'steamcmd'
       - LD_LIBRARY_PATH: '/srv/steam/steamcmd/linux32/'
+
+/srv/steam/kf/System/KillingFloor.ini:
+  file.managed:
+    - source: salt://killingfloor/files/KillingFloor.ini
+    - user: steam
+    - group: steam
+    - template: jinja
