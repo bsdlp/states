@@ -1,0 +1,4 @@
+login anonymous
+force_install_dir /srv/steam/kf/
+app_update 215360 validate
+exit

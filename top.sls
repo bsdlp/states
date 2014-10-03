@@ -24,6 +24,7 @@ base:
   'G@role:killingfloor':
     - match: compound
     - steam
+    - killingfloor
   'G@role:master':
     - match: compound
     - salt.master
