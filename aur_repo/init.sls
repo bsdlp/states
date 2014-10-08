@@ -20,12 +20,7 @@ abs_pkgs:
   file.managed:
     - source: salt://aur_repo/files/abs.conf
 
-abs:
+/usr/bin/abs:
   cmd:
     - run
     - require: abs_pkgs
-
-abs2:
-  cmd.run:
-    - name: abs
-    - require: abs
