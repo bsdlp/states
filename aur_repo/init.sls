@@ -6,7 +6,7 @@ abs_pkgs:
       - {{ pkg }}
       {% endfor %}
 
-{% for build_dir in pillar['aur_repo']['build_dirs'] %}
+{% for _, build_dir in pillar['aur_repo']['build_dirs'] %}
 {{ build_dir }}:
   file.directory:
     - makedirs: True
