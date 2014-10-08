@@ -15,6 +15,7 @@ abs_pkgs:
 /etc/makepkg.conf:
   file.managed:
     - source: salt://aur_repo/files/makepkg.conf
+    - template: jinja
 
 /etc/abs.conf:
   file.managed:
