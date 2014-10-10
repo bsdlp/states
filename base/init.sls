@@ -1,15 +1,3 @@
-haveged:
-  service:
-    - running
-
-init-keys:
-  cmd.run:
-    - name: pacman-key --init
-
-import-keyring:
-  cmd.run:
-    - name: pacman-key --populate archlinux
-
 reflector:
   pkg:
     - installed
