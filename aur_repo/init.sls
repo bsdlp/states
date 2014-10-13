@@ -6,7 +6,7 @@ abs_pkgs:
       - {{ pkg }}
       {% endfor %}
 
-{% for build_dir in pillar['aur_repo']['build_dirs'] %}
+{% for _, build_dir in pillar['aur_repo']['build_dirs'] %}
 {{ build_dir }}:
   file.directory:
     - makedirs: True
@@ -15,17 +15,13 @@ abs_pkgs:
 /etc/makepkg.conf:
   file.managed:
     - source: salt://aur_repo/files/makepkg.conf
+    - template: jinja
 
 /etc/abs.conf:
   file.managed:
     - source: salt://aur_repo/files/abs.conf
 
-abs:
+/usr/bin/abs:
   cmd:
     - run
     - require: abs_pkgs
-
-abs2:
-  cmd.run:
-    - name: abs
-    - require: abs
