@@ -1,3 +1,4 @@
+{% if grains['os_family'] == 'Arch' %}
 reflector:
   pkg:
     - installed
@@ -7,6 +8,7 @@ mirrorlist:
   cmd.run:
     - name: reflector --fastest 5 --sort score --save /etc/pacman.d/mirrorlist
     - creates: /etc/pacman.d/mirrorlist
+{% endif %}
 
 base-pkgs:
   pkg:
