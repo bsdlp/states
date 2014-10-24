@@ -1,6 +1,7 @@
 base:
   '*':
     - base
+    - iptables
     - ssh
     - users
   'G@role:aur_repo':
