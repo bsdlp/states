@@ -13,3 +13,9 @@ required_packages:
       {% for pkg in pillar['mesos']['required_pkgs'] %}
       - {{ pkg }}
       {% endfor %}
+
+/opt/buildscript.sh:
+  cmd.script:
+    - template: jinja
+    - name: salt://mesos/buildscript.sh
+    - cwd: /opt/mesos-0.20.0/
