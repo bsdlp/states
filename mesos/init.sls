@@ -1,10 +1,10 @@
 mesos_tarball:
   archive.extracted:
     - name: /opt/
-    - source: http://www.apache.org/dist/mesos/0.20.0/mesos-0.20.0.tar.gz
-    - source_hash: http://www.apache.org/dist/mesos/0.20.0/mesos-0.20.0.tar.gz.md5
+    - source: http://www.apache.org/dist/mesos/{{ pillar['mesos']['version'] }}/mesos-{{ pillar['mesos']['version'] }}.tar.gz
+    - source_hash: http://www.apache.org/dist/mesos/{{ pillar['mesos']['version'] }}/mesos-{{ pillar['mesos']['version'] }}.tar.gz.md5
     - archive_format: tar
-    - if_missing: /opt/mesos-0.20.0
+    - if_missing: /opt/mesos-{{ pillar['mesos']['version'] }}
 
 required_packages:
   pkg.installed:
@@ -18,4 +18,4 @@ required_packages:
   cmd.script:
     - template: jinja
     - name: salt://mesos/buildscript.sh
-    - cwd: /opt/mesos-0.20.0/
+    - cwd: /opt/mesos-{{ pillar['mesos']['version'] }}/
